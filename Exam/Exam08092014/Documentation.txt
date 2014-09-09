@@ -1,0 +1,19 @@
+Connection string for "Company" database: (localdb)\mssqllocaldb
+	<connectionStrings>
+		<add name="CompanyEntities" connectionString="metadata=res://*/CompanyProblemEntity.csdl|res://*/CompanyProblemEntity.ssdl|res://*/CompanyProblemEntity.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(localdb)\mssqllocaldb;initial catalog=Company;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+	</connectionStrings>
+Connection string for "Cars" database: (localdb)\mssqllocaldb
+	<connectionString>
+    <add name="Cars" connectionString="Data Source=(localdb)\mssqllocaldb;Initial Catalog=Cars;Integrated Security=True" providerName="System.Data.SqlClient" />
+  </connectionString>
+Relationships for "Company" database: (first-table : second-table - type of relationship)
+	Employee : Department - many to one
+	Employee : Project - one to many
+	Employee : Reports - many to many
+
+Relationships for "Cars" database: (first-table : second-table - type of relationship)
+	Cars - Manufactorers - many to one
+	Cars - Dealers - many to one
+	Cities - Dealers - one to one
+
+Query files: (file location in solution)
